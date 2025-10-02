@@ -9,237 +9,153 @@ int main(){
 	const float PI = 3.14;
 	float x, y, sonuc;
 	int islem, z;
-	std::cout << "******************** BÝLÝMSEL HESAP MAKÝNESÝ ******************\n---------------------------------------------------------------\n";
-	std::cout << "Basit iþlemler | Trigonometrik Ýþlemler | Logaritmik Ýþlemler";
-	std::cout << "\n---------------------------------------------------------------\n1) Toplama\t\t7) Sin\t\t13) Logaritma\n2) Çýkarma\t\t8) Cos\t\t14) 10 Tabanlý Log\n"
-	<<"3) Çarpma\t\t9) Tan\n" << "4) Bölme\t\t10) Sinüs Tersi\n5) Karekök Al\t\t11) Kosinüs Tersi\n6) Üs Al\t\t12) Tanjant Tersi";
+	std::cout << "******************** Bï¿½Lï¿½MSEL HESAP MAKï¿½NESï¿½ ******************\n---------------------------------------------------------------\n";
+	std::cout << "Basit iï¿½lemler | Trigonometrik ï¿½ï¿½lemler | Logaritmik ï¿½ï¿½lemler";
+	std::cout << "\n---------------------------------------------------------------\n1) Toplama\t\t7) Sin\t\t13) Logaritma\n2) ï¿½ï¿½karma\t\t8) Cos\t\t14) 10 Tabanlï¿½ Log\n"
+	<<"3) ï¿½arpma\t\t9) Tan\n" << "4) Bï¿½lme\t\t10) Sinï¿½s Tersi\n5) Karekï¿½k Al\t\t11) Kosinï¿½s Tersi\n6) ï¿½s Al\t\t12) Tanjant Tersi";
 	std::cout << "\n---------------------------------------------------------------\n";
-	std::cout << "Yapmak istediðiniz iþlemi seçiniz: ";
+	std::cout << "Yapmak istediï¿½iniz iï¿½lemi seï¿½iniz: ";
 	std::cin >> islem;
 		
 	switch(islem){
 		case 1:
-			std::cout << "Birinci Sayýyý Giriniz: ";
+			std::cout << "Birinci Sayï¿½yï¿½ Giriniz: ";
 			std::cin >> x;
-			std::cout << "Ýkinci Sayýyý Giriniz: ";
+			std::cout << "ï¿½kinci Sayï¿½yï¿½ Giriniz: ";
 			std::cin >> y;
 			sonuc = x + y;
-			std::cout << "Yaptýðýnýz Ýþlemin Sonucu: " << sonuc;
-			std::cout << "\nYeni Bir Ýþlem Yapmak için 0 Yazýnýz!\nHesap Makinesinden Çýkmak için -1 Yazýnýz!\n";
+			std::cout << "Yaptï¿½ï¿½ï¿½nï¿½z ï¿½ï¿½lemin Sonucu: " << sonuc;
+			std::cout << "\nYeni Bir ï¿½ï¿½lem Yapmak iï¿½in 0 Yazï¿½nï¿½z!\nHesap Makinesinden ï¿½ï¿½kmak iï¿½in -1 Yazï¿½nï¿½z!\n";
 			std::cin >> z;
-			if(z == 0){
-				system("CLS");
-				goto enbas;	
-			}
-			if(z == -1)
-				exit(EXIT_FAILURE);
-			break;
+			 
 		
 		case 2:	
-			std::cout << "Birinci Sayýyý Giriniz: ";
+			std::cout << "Birinci Sayï¿½yï¿½ Giriniz: ";
 			std::cin >> x;
-			std::cout << "Ýkinci Sayýyý Giriniz: ";
+			std::cout << "ï¿½kinci Sayï¿½yï¿½ Giriniz: ";
 			std::cin >> y;
 			sonuc = x - y;
-			std::cout << "Yaptýðýnýz Ýþlemin Sonucu: " << sonuc;
-			std::cout << "\nYeni Bir Ýþlem Yapmak için 0 Yazýnýz!\nHesap Makinesinden Çýkmak için -1 Yazýnýz!\n";
+			std::cout << "Yaptï¿½ï¿½ï¿½nï¿½z ï¿½ï¿½lemin Sonucu: " << sonuc;
+			std::cout << "\nYeni Bir ï¿½ï¿½lem Yapmak iï¿½in 0 Yazï¿½nï¿½z!\nHesap Makinesinden ï¿½ï¿½kmak iï¿½in -1 Yazï¿½nï¿½z!\n";
 			std::cin >> z;
-			if(z == 0){
-				system("CLS");
-				goto enbas;	
-			}
-			if(z == -1)
-				exit(EXIT_FAILURE);
-			break;
+			 
 		
 		case 3:
-			std::cout << "Birinci Sayýyý Giriniz: ";
+			std::cout << "Birinci Sayï¿½yï¿½ Giriniz: ";
 			std::cin >> x;
-			std::cout << "Ýkinci Sayýyý Giriniz: ";
+			std::cout << "ï¿½kinci Sayï¿½yï¿½ Giriniz: ";
 			std::cin >> y;
 			sonuc = x * y;
-			std::cout << "Yaptýðýnýz Ýþlemin Sonucu: " << sonuc;
-			std::cout << "\nYeni Bir Ýþlem Yapmak için 0 Yazýnýz!\nHesap Makinesinden Çýkmak için -1 Yazýnýz!\n";
+			std::cout << "Yaptï¿½ï¿½ï¿½nï¿½z ï¿½ï¿½lemin Sonucu: " << sonuc;
+			std::cout << "\nYeni Bir ï¿½ï¿½lem Yapmak iï¿½in 0 Yazï¿½nï¿½z!\nHesap Makinesinden ï¿½ï¿½kmak iï¿½in -1 Yazï¿½nï¿½z!\n";
 			std::cin >> z;
-			if(z == 0){
-				system("CLS");
-				goto enbas;	
-			}
-			if(z == -1)
-				exit(EXIT_FAILURE);
-			break;
+			 
 		
 		case 4:
-			std::cout << "Birinci Sayýyý Giriniz: ";
+			std::cout << "Birinci Sayï¿½yï¿½ Giriniz: ";
 			std::cin >> x;
-			std::cout << "Ýkinci Sayýyý Giriniz: ";
+			std::cout << "ï¿½kinci Sayï¿½yï¿½ Giriniz: ";
 			std::cin >> y;
 			sonuc = x / y;
-			std::cout << "Yaptýðýnýz Ýþlemin Sonucu: " << sonuc;
-			std::cout << "\nYeni Bir Ýþlem Yapmak için 0 Yazýnýz!\nHesap Makinesinden Çýkmak için -1 Yazýnýz!\n";
+			std::cout << "Yaptï¿½ï¿½ï¿½nï¿½z ï¿½ï¿½lemin Sonucu: " << sonuc;
+			std::cout << "\nYeni Bir ï¿½ï¿½lem Yapmak iï¿½in 0 Yazï¿½nï¿½z!\nHesap Makinesinden ï¿½ï¿½kmak iï¿½in -1 Yazï¿½nï¿½z!\n";
 			std::cin >> z;
-			if(z == 0){
-				system("CLS");
-				goto enbas;	
-			}
-			if(z == -1)
-				exit(EXIT_FAILURE);
-			break;
+			 
 		
 		case 5:
-			std::cout << "Kökünü Almak Ýstediðiniz Sayýyý Giriniz: ";
+			std::cout << "Kï¿½kï¿½nï¿½ Almak ï¿½stediï¿½iniz Sayï¿½yï¿½ Giriniz: ";
 			std::cin >> x;
 			sonuc = sqrt(x);
-			std::cout << "Yaptýðýnýz Ýþlemin Sonucu: " << sonuc;
-			std::cout << "\nYeni Bir Ýþlem Yapmak için 0 Yazýnýz!\nHesap Makinesinden Çýkmak için -1 Yazýnýz!\n";
+			std::cout << "Yaptï¿½ï¿½ï¿½nï¿½z ï¿½ï¿½lemin Sonucu: " << sonuc;
+			std::cout << "\nYeni Bir ï¿½ï¿½lem Yapmak iï¿½in 0 Yazï¿½nï¿½z!\nHesap Makinesinden ï¿½ï¿½kmak iï¿½in -1 Yazï¿½nï¿½z!\n";
 			std::cin >> z;
-			if(z == 0){
-				system("CLS");
-				goto enbas;	
-			}
-			if(z == -1)
-				exit(EXIT_FAILURE);
-			break;			
+			 			
 		
 		case 6:
-			std::cout << "Girmek Ýstediðiniz Sayýyý Giriniz: ";
+			std::cout << "Girmek ï¿½stediï¿½iniz Sayï¿½yï¿½ Giriniz: ";
 			std::cin >> x;
-			std::cout << "Almak Ýstediðiniz Üs Kuvvetini Giriniz: ";
+			std::cout << "Almak ï¿½stediï¿½iniz ï¿½s Kuvvetini Giriniz: ";
 			std::cin >> y;
 			sonuc = pow(x, y);
-			std::cout << "Yaptýðýnýz Ýþlemin Sonucu: " << sonuc;
-			std::cout << "\nYeni Bir Ýþlem Yapmak için 0 Yazýnýz!\nHesap Makinesinden Çýkmak için -1 Yazýnýz!\n";
+			std::cout << "Yaptï¿½ï¿½ï¿½nï¿½z ï¿½ï¿½lemin Sonucu: " << sonuc;
+			std::cout << "\nYeni Bir ï¿½ï¿½lem Yapmak iï¿½in 0 Yazï¿½nï¿½z!\nHesap Makinesinden ï¿½ï¿½kmak iï¿½in -1 Yazï¿½nï¿½z!\n";
 			std::cin >> z;
-			if(z == 0){
-				system("CLS");
-				goto enbas;	
-			}
-			if(z == -1)
-				exit(EXIT_FAILURE);
-			break;
+			 
 		
 		case 7:
-			std::cout << "Lütfen Bir Sayý Giriniz: ";
+			std::cout << "Lï¿½tfen Bir Sayï¿½ Giriniz: ";
 			std::cin >> x;
 			sonuc = sin(x);
-			std::cout << "Yaptýðýnýz Ýþlemin Sonucu: " << sonuc;
-			std::cout << "\nYeni Bir Ýþlem Yapmak için 0 Yazýnýz!\nHesap Makinesinden Çýkmak için -1 Yazýnýz!\n";
+			std::cout << "Yaptï¿½ï¿½ï¿½nï¿½z ï¿½ï¿½lemin Sonucu: " << sonuc;
+			std::cout << "\nYeni Bir ï¿½ï¿½lem Yapmak iï¿½in 0 Yazï¿½nï¿½z!\nHesap Makinesinden ï¿½ï¿½kmak iï¿½in -1 Yazï¿½nï¿½z!\n";
 			std::cin >> z;
-			if(z == 0){
-				system("CLS");
-				goto enbas;	
-			}
-			if(z == -1)
-				exit(EXIT_FAILURE);
-			break;
+			 
 		
 		case 8:
-			std::cout << "Lütfen Bir Sayý Giriniz: ";
+			std::cout << "Lï¿½tfen Bir Sayï¿½ Giriniz: ";
 			std::cin >> x;
 			sonuc = cos(x);
-			std::cout << "Yaptýðýnýz Ýþlemin Sonucu: " << sonuc;
-			std::cout << "\nYeni Bir Ýþlem Yapmak için 0 Yazýnýz!\nHesap Makinesinden Çýkmak için -1 Yazýnýz!\n";
+			std::cout << "Yaptï¿½ï¿½ï¿½nï¿½z ï¿½ï¿½lemin Sonucu: " << sonuc;
+			std::cout << "\nYeni Bir ï¿½ï¿½lem Yapmak iï¿½in 0 Yazï¿½nï¿½z!\nHesap Makinesinden ï¿½ï¿½kmak iï¿½in -1 Yazï¿½nï¿½z!\n";
 			std::cin >> z;
-			if(z == 0){
-				system("CLS");
-				goto enbas;	
-			}
-			if(z == -1)
-				exit(EXIT_FAILURE);
-			break;
+			 
 		
 		case 9:
-			std::cout << "Lütfen Bir Sayý Giriniz: ";
+			std::cout << "Lï¿½tfen Bir Sayï¿½ Giriniz: ";
 			std::cin >> x;
 			sonuc = tan(x);
-			std::cout << "Yaptýðýnýz Ýþlemin Sonucu: " << sonuc;
-			std::cout << "\nYeni Bir Ýþlem Yapmak için 0 Yazýnýz!\nHesap Makinesinden Çýkmak için -1 Yazýnýz!\n";
+			std::cout << "Yaptï¿½ï¿½ï¿½nï¿½z ï¿½ï¿½lemin Sonucu: " << sonuc;
+			std::cout << "\nYeni Bir ï¿½ï¿½lem Yapmak iï¿½in 0 Yazï¿½nï¿½z!\nHesap Makinesinden ï¿½ï¿½kmak iï¿½in -1 Yazï¿½nï¿½z!\n";
 			std::cin >> z;
-			if(z == 0){
-				system("CLS");
-				goto enbas;	
-			}
-			if(z == -1)
-				exit(EXIT_FAILURE);
-			break;
+			 
 		
 		case 10:
-			std::cout << "Sinüs Deðerini Giriniz: ";
+			std::cout << "Sinï¿½s Deï¿½erini Giriniz: ";
 			std::cin >> x;
 			sonuc = asin(x) * 180 / PI;
-			std::cout << "Girdiðiniz Sinüs Deðerinin Tersi: " << sonuc;
-			std::cout << "\nYeni Bir Ýþlem Yapmak için 0 Yazýnýz!\nHesap Makinesinden Çýkmak için -1 Yazýnýz!\n";
+			std::cout << "Girdiï¿½iniz Sinï¿½s Deï¿½erinin Tersi: " << sonuc;
+			std::cout << "\nYeni Bir ï¿½ï¿½lem Yapmak iï¿½in 0 Yazï¿½nï¿½z!\nHesap Makinesinden ï¿½ï¿½kmak iï¿½in -1 Yazï¿½nï¿½z!\n";
 			std::cin >> z;
-			if(z == 0){
-				system("CLS");
-				goto enbas;	
-			}
-			if(z == -1)
-				exit(EXIT_FAILURE);
-			break;
+			 
 		
 		case 11:
-			std::cout << "Kosinüs Deðerini Giriniz: ";
+			std::cout << "Kosinï¿½s Deï¿½erini Giriniz: ";
 			std::cin >> x;
 			sonuc = acos(x) * 180 / PI;
-			std::cout << "Girdiðiniz Kosinüs Deðerinin Tersi: " << sonuc;
-			std::cout << "\nYeni Bir Ýþlem Yapmak için 0 Yazýnýz!\nHesap Makinesinden Çýkmak için -1 Yazýnýz!\n";
+			std::cout << "Girdiï¿½iniz Kosinï¿½s Deï¿½erinin Tersi: " << sonuc;
+			std::cout << "\nYeni Bir ï¿½ï¿½lem Yapmak iï¿½in 0 Yazï¿½nï¿½z!\nHesap Makinesinden ï¿½ï¿½kmak iï¿½in -1 Yazï¿½nï¿½z!\n";
 			std::cin >> z;
-			if(z == 0){
-				system("CLS");
-				goto enbas;	
-			}
-			if(z == -1)
-				exit(EXIT_FAILURE);
-			break;	
+			 	
 		
 		case 12:
-			std::cout << "Tanjant Deðerini Giriniz: ";
+			std::cout << "Tanjant Deï¿½erini Giriniz: ";
 			std::cin >> x;
 			sonuc = atan(x) * 180 / PI;
-			std::cout << "Girdiðiniz Tanjant Deðerinin Tersi: " << sonuc;
-			std::cout << "\nYeni Bir Ýþlem Yapmak için 0 Yazýnýz!\nHesap Makinesinden Çýkmak için -1 Yazýnýz!\n";
+			std::cout << "Girdiï¿½iniz Tanjant Deï¿½erinin Tersi: " << sonuc;
+			std::cout << "\nYeni Bir ï¿½ï¿½lem Yapmak iï¿½in 0 Yazï¿½nï¿½z!\nHesap Makinesinden ï¿½ï¿½kmak iï¿½in -1 Yazï¿½nï¿½z!\n";
 			std::cin >> z;
-			if(z == 0){
-				system("CLS");
-				goto enbas;	
-			}
-			if(z == -1)
-				exit(EXIT_FAILURE);
-			break;
+			 
 			
 		case 13:
-			std::cout << "Lütfen Bir Sayý Giriniz: ";
+			std::cout << "Lï¿½tfen Bir Sayï¿½ Giriniz: ";
 			std::cin >> x;
 			sonuc = log(x);
 			std::cout << "Logaritma Sonucu: " << sonuc;
-			std::cout << "\nYeni Bir Ýþlem Yapmak için 0 Yazýnýz!\nHesap Makinesinden Çýkmak için -1 Yazýnýz!\n";
+			std::cout << "\nYeni Bir ï¿½ï¿½lem Yapmak iï¿½in 0 Yazï¿½nï¿½z!\nHesap Makinesinden ï¿½ï¿½kmak iï¿½in -1 Yazï¿½nï¿½z!\n";
 			std::cin >> z;
-			if(z == 0){
-				system("CLS");
-				goto enbas;	
-			}
-			if(z == -1)
-				exit(EXIT_FAILURE);
-			break;
+			 
 		
 		case 14:
-			std::cout << "Lütfen Bir Sayý Giriniz: ";
+			std::cout << "Lï¿½tfen Bir Sayï¿½ Giriniz: ";
 			std::cin >> x;
 			sonuc = log10(x);
-			std::cout << "10 Tabanlý Logaritma Sonucu: \n" << sonuc;
-			std::cout << "\nYeni Bir Ýþlem Yapmak için 0 Yazýnýz!\nHesap Makinesinden Çýkmak için -1 Yazýnýz!\n";
+			std::cout << "10 Tabanlï¿½ Logaritma Sonucu: \n" << sonuc;
+			std::cout << "\nYeni Bir ï¿½ï¿½lem Yapmak iï¿½in 0 Yazï¿½nï¿½z!\nHesap Makinesinden ï¿½ï¿½kmak iï¿½in -1 Yazï¿½nï¿½z!\n";
 			std::cin >> z;
-			if(z == 0){
-				system("CLS");
-				goto enbas;	
-			}
-			if(z == -1)
-				exit(EXIT_FAILURE);
-			break;
+			 
 			
 		default:
-			std::cout << "Yanlýþ Deðer Girdiniz!!!";
+			std::cout << "Yanlï¿½ï¿½ Deï¿½er Girdiniz!!!";
 			break;									
 	}
 	
