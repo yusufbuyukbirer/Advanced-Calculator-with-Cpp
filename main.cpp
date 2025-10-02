@@ -1,5 +1,4 @@
 #include <iostream>
-#include <locale.h>
 #include <stdlib.h>
 #include <math.h>
 
@@ -11,7 +10,7 @@ int main () {
   std::cout << "*************************************************************" << std::endl;
   std::cout << "******************** ADVANCED CALCULATOR ********************" << std::endl;
   std::cout << "*************************************************************" << std::endl;
-  std::cout << " 1) Addition\t\t 7) Sine\n 2) Subtraction\t\t 8) Cosine\n 3) Multiplication\t 9) Tangent\n 4) Divison\t\t 10) Arcsine\n"
+  std::cout << " 1) Addition\t\t 7) Sine\t\t 13) Logarithm\n 2) Subtraction\t\t 8) Cosine\t\t 14) Base 10 Log\n 3) Multiplication\t 9) Tangent\n 4) Divison\t\t 10) Arcsine\n"
   << " 5) Square Root\t\t 11) Arccosine\n 6) Exponentiation\t 12) Arctangent" << std::endl;
   std::cout << "Choose an operation: ";
   std::cin >> choice;
@@ -122,6 +121,25 @@ int main () {
       result = atan(firstNumber) * 180 / PI;
       std::cout << "Your result is: " << result;
       break;
+
+    case 13:
+      std::cout << "Enter a number for calculating Logarithm: ";
+      std::cin >> firstNumber;
+        
+      result = log(firstNumber);
+      std::cout << "Your result is: " << result;
+      break;
+
+    case 14:
+      std::cout << "Enter a number for calculating Base 10 Logarithm: ";
+      std::cin >> firstNumber;
+        
+      result = log10(firstNumber);
+      std::cout << "Your result is: " << result;
+      break;
+
+
+
   }
 
   return 0;
