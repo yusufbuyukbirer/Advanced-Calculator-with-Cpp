@@ -138,8 +138,6 @@ int main () {
       std::cout << "Your result is: " << result;
       break;
 
-
-
   }
 
   return 0;
